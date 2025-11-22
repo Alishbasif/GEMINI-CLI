@@ -29,8 +29,8 @@ gemini
 ```
 
 **First time it asks**
-1- Theme(light/Dark)
-2- Login Method(for Authentication)
+- Theme(light/Dark)
+- Login Method(for Authentication)
   - Google Login(Best for free quota)
   - Gemini API Key (Higher quota)
   -Vertex API (for GCP use)
@@ -46,7 +46,7 @@ gemini
 /quit      # Exit
 ``` 
 ## 4- File Handling(Super PowerFull)
-Use '@' for giving the file name as example.
+Use ```@``` for giving the file name as example.
 
 ```cmd
 Fix Error in @main.py
@@ -74,7 +74,7 @@ gemini -m "gemini-pro-2.5"        # for premium users
 **Note:** Free tier may auto-switch to Flash due to quota limits.
 
 ## 7-Single Prompt Mode
-How to give prompts: Run without interactive interface
+**How to give prompts:** Run without interactive interface
 
 ```cmd
 # Using prompt parameter
@@ -116,9 +116,9 @@ This file gives instructions to the AI guides for:
 - Tech Preference
 
 ### File Hierarchy
-*Global:* ~/.gemini/GEMINI.md - Rules for all projects
-*Project Root:* Project-wide instructions
-*Local:* Subdirectory-specific rules
+**Global:** ~/.gemini/GEMINI.md - Rules for all projects
+**Project Root:** Project-wide instructions
+**Local:** Subdirectory-specific rules
 
 ## View Current Context
 ```cmd
@@ -186,7 +186,7 @@ Solution: Use Gemini API Key for higher quota
 Issue: GEMINI.md not found
 Solution: Check file location with gemini -d
 ```
-### Port Already in Use
+## Port Already in Use
 ```cmd
 Issue: Server won't start
 Solution: Ask Gemini to use different port
@@ -199,18 +199,18 @@ MCP server integration
 Custom slash commands
 VS Code integration
 Advanced context management
-### Quick Reference
-# Installation
+## Quick Reference
+### Installation
 npm install -g @google/gemini-cli
 
-# Launch
+### Launch
 gemini                          # Interactive mode
 gemini "prompt"                 # Single prompt
 gemini -m "model"               # Choose model
 gemini -c                       # With checkpointing
 gemini -d                       # Debug mode
 
-# Inside CLI
+### Inside CLI
 /help                           # Show commands
 /tools                          # List tools
 /memory show                    # View context
