@@ -20,11 +20,13 @@ Require version of Node.JS is 20+ and higher
 npm install -g@google/gemini-cli
 gemini -v
 npm upgrade -g@google/gemini-cli
+```
 
 ## 2- Starting & Launching
 Start Gemini CLI
 ```cmd
 gemini
+```
 
 **First time it asks**
 1- Theme(light/Dark)
@@ -42,33 +44,33 @@ gemini
 /tools     # What tool use
 /stats     # session stats
 /quit      # Exit
-
+``` 
 ## 4- File Handling(Super PowerFull)
 Use '@' for giving the file name as example.
 
 ```cmd
 Fix Error in @main.py
 Add more infomation in @README.md file
-
+```
 ## 5- Shell Mode
 If you want to run the commands in terminal
 ```cmd
 !                  # Enable shell mode
 pwd                # Run commands
 ESC                # Exit Shell Mode
-
+```
 ## 6- Models and Version Selection
 
 **version check**
 ```cmd
 gemini -v          # check current version
 gemini --version
-
+```
 **Models**
 ```cmd
 gemini -m "gemini-flash-2.5"      # for free users
 gemini -m "gemini-pro-2.5"        # for premium users
-
+```
 **Note:** Free tier may auto-switch to Flash due to quota limits.
 
 ## 7-Single Prompt Mode
@@ -80,19 +82,20 @@ gemini -p "What is the gcloud command to deploy to Cloud Run"
 
 # Using positional prompt (preferred)
 gemini "What is the gcloud command to deploy to Cloud Run"
-
+```
 ## 8- Debug Mode
 See detailed execution information:
 ```cmd
 gemini -d                       # Launch with debug
 gemini -d -p "your prompt"      # Debug with single prompt
+```
 **Note:** This is for authentication, context loading, which gemini.md file is used, system memory, tool usuage
 
 ## 9- Sessions Memory:
 Save session metrics to file:
 ```cmd
 gemini --session-summary "session.txt"
-
+```
 **Tracks:**
 It saves all the:
 Model usage
@@ -104,7 +107,7 @@ Tool usage statistics
 ```cmd
 gemini -y
 gemini -yolo
-
+```
 ## 11- Gemini.md(Your AI Rule File):
 This file gives instructions to the AI guides for:
 - Coding Style
@@ -121,7 +124,9 @@ This file gives instructions to the AI guides for:
 ```cmd
 /memory show        # Display loaded context
 /memory refresh     # Reload GEMINI.md files
-Example GEMINI.md
+```
+## Example GEMINI.md
+```cmd
 # Project Guidelines
 ## Code Style
 - Use TypeScript strict mode
@@ -133,12 +138,13 @@ Example GEMINI.md
 ## Testing
 - Write tests for all functions
 - Use Jest framework
-
+```
 
 ## 12- Build-in Tools
 ```cmd
 /tools
-Helps to search with comman Tools
+```
+**Helps to search with comman Tools**
 - Google Search
 - Read File
 - Write File
@@ -152,13 +158,13 @@ Helps to search with comman Tools
 **git help:**
 ```cmd
 gemini "show me git commands for rebasing"
-
+```
 ### Generate Code
 ```cmd
 cd my-project
 gemini
 > Create a REST API with user authentication
-
+```
 ### Modify Existing Files
 ```cmd
 gemini
@@ -168,23 +174,23 @@ gemini -c
 > (make changes)
 > /restore
 > (select checkpoint to restore)
-
+```
 ### Troubleshooting
 ```cmd
 Model Switches to Flash
 Issue: Pro model auto-switches to Flash
 Solution: Use Gemini API Key for higher quota
-
+```
 ### No Context Loading
 ```cmd
 Issue: GEMINI.md not found
 Solution: Check file location with gemini -d
-
+```
 ### Port Already in Use
 ```cmd
 Issue: Server won't start
 Solution: Ask Gemini to use different port
-
+```
 ### Next Steps
 This guide covers installation, configuration, and basic usage. Upcoming topics:
 
