@@ -116,9 +116,9 @@ This file gives instructions to the AI guides for:
 - Tech Preference
 
 ### File Hierarchy
-**Global:** ~/.gemini/GEMINI.md - Rules for all projects
-**Project Root:** Project-wide instructions
-**Local:** Subdirectory-specific rules
+- **Global:** ~/.gemini/GEMINI.md - Rules for all projects
+- **Project Root:** Project-wide instructions
+- **Local:** Subdirectory-specific rules
 
 ## View Current Context
 ```cmd
@@ -235,7 +235,7 @@ Pro Tip: Start small, experiment with simple tasks, and gradually add GEMINI.md 
 
 
 ## Practical Example:
-**Weather Dashboard
+**Weather Dashboard**
 ```cmd
 Create python flask web app that shows real-time weather data that using the OpenWeatherMap.API(https://api.openweathermap.org/data/2.5/weather) include:
 - Home Page
